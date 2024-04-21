@@ -31,6 +31,12 @@ function App() {
             headerShown: false,
           }
         } name="First" component={First} />
+        <Stack.Screen options={
+          {
+            title: "",
+            headerTransparent: true
+          }
+        } name="Signup" component={Signup} />
       </Stack.Navigator>
     </NavigationContainer>
   );
