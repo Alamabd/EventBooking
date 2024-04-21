@@ -37,6 +37,12 @@ function App() {
             headerTransparent: true
           }
         } name="Signup" component={Signup} />
+        <Stack.Screen options={
+          {
+            title: "",
+            headerTransparent: true
+          }
+        } name="Setloc" component={Setloc} />
       </Stack.Navigator>
     </NavigationContainer>
   );
