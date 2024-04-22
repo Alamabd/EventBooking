@@ -1,5 +1,6 @@
 import { Text, Image, View, TouchableOpacity, ToastAndroid, TextInput } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Icon from 'react-native-remix-icon';
 import Styles from '../Styles';
 
 function Signup({navigation}: any): React.JSX.Element {
@@ -12,11 +13,11 @@ function Signup({navigation}: any): React.JSX.Element {
             <Text style={[Styles.h1, {marginTop: 60, textAlign: "center"}]}>Welcome Back</Text>
             <Text style={[Styles.p, {marginBottom: 10, textAlign: "center"}]}>Please enter with the options we provide</Text>
             <View style={Styles.inpWrapper}>
-              <Image source={require("../image/mail.png")} />
+              <Icon name="ri-mail-line" size="24" color="#e5e5e5" />
               <TextInput style={Styles.inpText} inputMode="email" placeholder="Email" />
             </View>
             <View style={Styles.inpWrapper}>
-              <Image source={require("../image/lock.png")} />
+            <Icon name="ri-lock-line" size="24" color="#e5e5e5" />
               <TextInput style={Styles.inpText} inputMode="text" placeholder="Password" />
             </View>
             <Text style={{textAlign: "right", marginBottom: 10}}>Forgot password?</Text>

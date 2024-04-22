@@ -1,5 +1,6 @@
 import { Text, Image, View, TouchableOpacity, ToastAndroid, TextInput, ImageSourcePropType } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context';
+import Icon from 'react-native-remix-icon';
 import Styles from '../Styles';
 
 function Setloc({navigation}: any): React.JSX.Element {
@@ -38,13 +39,13 @@ function Setloc({navigation}: any): React.JSX.Element {
             <Text style={[Styles.p, {marginBottom: 10}]}>Let`s find your unforgettable event. Choose a location bellow to get started</Text>
             <View style={{marginTop: 20}}>
                 <View style={Styles.inpWrapper}>
-                <Image source={require("../image/map-fill.png")} />
+                <Icon name="ri-map-pin-fill" size="24" color="#3C5B6F" />
                 <TextInput style={Styles.inpText} inputMode="search" placeholder="Search event in..." />
                 </View>
                 <TouchableOpacity style={[Styles.btnicon]} activeOpacity={0.9}
-                    onPress={() => navigation.navigate("Setloc")}
+                    onPress={() => navigation.navigate("TabBottom")}
                     >
-                    <Image source={require("../image/focus.png")} />
+                    <Icon name="ri-focus-3-line" size={24} color="#000" />
                     <Text style={[Styles.btnText, {color: "black"}]}>Use my current location</Text>
                 </TouchableOpacity>
             </View>
