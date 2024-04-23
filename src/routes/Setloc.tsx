@@ -4,10 +4,6 @@ import Icon from 'react-native-remix-icon';
 import Styles from '../Styles';
 
 function Setloc({navigation}: any): React.JSX.Element {
-    function showToast(msg: string) {
-        ToastAndroid.show(msg, ToastAndroid.SHORT);
-    }
-
     type listLocType = {
         loc: string,
         country: string,
@@ -39,8 +35,8 @@ function Setloc({navigation}: any): React.JSX.Element {
             <Text style={[Styles.p, {marginBottom: 10}]}>Let`s find your unforgettable event. Choose a location bellow to get started</Text>
             <View style={{marginTop: 20}}>
                 <View style={Styles.inpWrapper}>
-                <Icon name="ri-map-pin-fill" size="24" color="#3C5B6F" />
-                <TextInput style={Styles.inpText} inputMode="search" placeholder="Search event in..." />
+                    <Icon name="ri-map-pin-fill" size="24" color="#3C5B6F" />
+                    <TextInput style={Styles.inpText} inputMode="search" placeholder="Search event in..." />
                 </View>
                 <TouchableOpacity style={[Styles.btnicon]} activeOpacity={0.9}
                     onPress={() => navigation.navigate("TabBottom")}
