@@ -20,6 +20,7 @@ function App() {
             contentStyle: {
               backgroundColor: "#fff"
             },
+            animation: 'fade',
           }
         }>
         <Stack.Screen options={
